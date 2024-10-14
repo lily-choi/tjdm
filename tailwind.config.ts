@@ -8,12 +8,53 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        title: ["Noto Sans KR", "sans-serif"],
+      },
+      fontSize: {
+        "heading-lg": [
+          "44px",
+          {
+            lineHeight: "1.3",
+            fontWeight: "700",
+          },
+        ],
+        "heading-md": [
+          "32px",
+          {
+            lineHeight: "1.4",
+            fontWeight: "700",
+          },
+        ],
+        "caption-md": [
+          "20px",
+          {
+            lineHeight: "1.6",
+            fontWeight: "400",
+          },
+        ],
+        "caption-r": [
+          "16px",
+          {
+            lineHeight: "1.8",
+            fontWeight: "400",
+          },
+        ],
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        blue: {},
+        grey: {
+          50: "#c5c5c5",
+          100: "#f6f6f6",
+          800: "#666666",
+          900: "#333333",
+        },
       },
     },
   },
   plugins: [],
 };
+
 export default config;

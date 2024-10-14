@@ -51,11 +51,11 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed w-full transition-colors duration-300 ${
+      className={`fixed w-full transition-colors duration-300 z-[999] ${
         scrolling ? "bg-white text-black" : "bg-transparent text-white"
       }`}
     >
-      <nav className="max-w-6xl mx-auto px-4 py-6 sm:px-6 lg:px-8">
+      <nav className="max-w-6xl mx-auto px-4 py-2 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* 로고 영역 */}
           <div className="flex-shrink-0">

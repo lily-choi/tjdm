@@ -60,19 +60,19 @@ export default function Navbar() {
           {/* 로고 영역 */}
           <div className="flex-shrink-0">
             <Link href="/">
-              <span className="text-xl font-bold">회사로고</span>
+              <span className="text-xl font-bold">로고</span>
             </Link>
           </div>
 
           {/* 데스크톱 네비게이션 */}
           <div className="hidden md:flex space-x-14">
-            <Link href="/about" className="hover:underline">
+            <Link href="/about" className="hover:underline text-title-sm">
               회사소개
             </Link>
-            <Link href="/blog" className="hover:underline">
+            <Link href="/blog" className="hover:underline text-title-sm">
               제품소개
             </Link>
-            <Link href="/contact" className="hover:underline">
+            <Link href="/contact" className="hover:underline text-title-sm">
               문의사항
             </Link>
           </div>
@@ -85,9 +85,12 @@ export default function Navbar() {
             <RiGlobalLine
               size={20}
               onClick={toggleLangMenu}
-              className="cursor-pointer"
+              className="cursor-pointer relative top-[1px]"
             />
-            <span className="cursor-pointer" onClick={toggleLangMenu}>
+            <span
+              className="cursor-pointer text-title-xs"
+              onClick={toggleLangMenu}
+            >
               KO
             </span>
             {isLangMenuOpen && (

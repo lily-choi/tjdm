@@ -26,6 +26,48 @@ const config: Config = {
             fontWeight: "700",
           },
         ],
+        "heading-xs": [
+          "25px",
+          {
+            lineHeight: "1.5",
+            fontWeight: "700",
+          },
+        ],
+        "heading-s": [
+          "20px",
+          {
+            lineHeight: "1.5",
+            fontWeight: "400",
+          },
+        ],
+        "heading-x": [
+          "15px",
+          {
+            lineHeight: "1.6",
+            fontWeight: "400",
+          },
+        ],
+        "heading-xxs": [
+          "22px",
+          {
+            lineHeight: "1.4",
+            fontWeight: "700",
+          },
+        ],
+        "title-sm": [
+          "18px",
+          {
+            lineHeight: "1.4",
+            fontWeight: "500",
+          },
+        ],
+        "title-xs": [
+          "15px",
+          {
+            lineHeight: "1.4",
+            fontWeight: "500",
+          },
+        ],
         "caption-md": [
           "20px",
           {
@@ -47,6 +89,7 @@ const config: Config = {
         blue: {},
         grey: {
           50: "#c5c5c5",
+          60: "#c8c8c8",
           100: "#f6f6f6",
           800: "#666666",
           900: "#333333",
